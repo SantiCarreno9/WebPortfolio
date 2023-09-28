@@ -1,0 +1,60 @@
+/*
+    app.css
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+*/
+
+/*Variables for UI colors*/
+:root {
+    --main-color: #212529;
+    --secondary-color: #6c757d;
+    --background-color: #F6F5F5;
+}
+
+/*Styles for website content*/
+body {
+    background-color: var(--background-color);
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-bottom: 50px;
+}
+
+/*Styles for footer section content*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Styles for website buttons*/
+.btn {
+    background-color: var(--main-color);
+}
+
+/*Styles for header buttons*/
+.nav-link {
+    font-size: 20px;    
+}
+
+/*Styles for active navigation button*/
+.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/*Styles for split sections container*/
+.row {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+/*Styles for split sections*/
+.column {
+    display: flex;
+    width: 50%;
+    padding-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,11 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>About</h1>
-</body>
-</html>
+<!--
+    about.ejs
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+-->
+<!-- Header Section-->
+<%- include ('./partials/header.ejs') %>
+    <!-- Imports stylesheet for this page-->
+    <link rel='stylesheet' href='/Content/css/about.css' />
+
+    <!-- Main content Section-->
+    <main class="container" style="display: flex;">
+        <!-- My picture-->
+        <div class="column">
+            <img src="/Assets/Images/ProfilePicture.jpeg" width="400" height="400" style="border-radius: 50%;">
+        </div>
+        <!-- My Description-->
+        <div class="column">
+            <h1>Santiago Felipe Carreño Pardo</h1>
+            <br>
+            <h3 style="font-weight: bold;">I am a Mechatronic engineer passionate about Game Development, with
+                experience creating 3D experiences using Unity game engine.</h3>
+            <br>
+            <p style="font-size: 20px;">
+                I have created projects, ranging from personal projects for fun and learning to academic projects whose
+                paper were published at an IEEE conference.
+                <br>
+                I have had the opportunity to work for different companies focused on a variety of industry fields,
+                including employee training using VR simulators,
+                applications to enhance customer service using AI assistants, child education using AR mobile apps, and
+                metaverse platforms.
+                <br>
+                Clicking the next button will allow you to view my resume, where I showcase my experience and education.
+            </p>
+            <br>
+            <!-- Button to open my resume in a new tab-->
+            <div class="resumeButtonContainer">
+                <a href="/Assets/Resume.pdf" target="_blank">
+                    <button type="button" class="btn btn-secondary" style="font-size: x-large;">
+                        Click me
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section-->
+    <%- include ('./partials/footer.ejs') %>

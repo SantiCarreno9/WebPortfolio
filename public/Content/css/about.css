@@ -1,0 +1,19 @@
+/*
+    about.css
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+*/
+
+/*Styles for main content container*/
+.container {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+/*Button container styles to adjust the buttons position*/
+.resumeButtonContainer{
+  display: flex;  
+  justify-content: end;  
+  width: 100%;
+}

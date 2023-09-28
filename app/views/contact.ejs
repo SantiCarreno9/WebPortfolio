@@ -1,0 +1,84 @@
+<!--
+    contact.ejs
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+-->
+<!-- Header Section-->
+<%- include ('./partials/header.ejs') %>
+  <!-- Imports stylesheet for this page-->
+  <link rel='stylesheet' href='/Content/css/contact.css' />
+
+  <!-- Main Content -->
+  <main class="container" style="font-size: large;">
+    <div class="row">
+      <!-- Contact info box -->
+      <div class="column">
+        <div class="contactBox">
+          <div style="height: 100%;">
+            <h3> Contact Me</h3>
+          </div>
+          <div style="position: absolute;">
+            <ul class="no-bullets">
+              <!-- Email -->
+              <li>
+                <!-- Action to mail this email address -->
+                <a class="nav-link contactInfo" href="mailto: santiago.carreno05@gmail.com" target="_blank"><i
+                    class="fa-regular fa-envelope"></i>
+                  santiago.carreno05@gmail.com
+                </a>
+              </li>
+              <br><br>
+              <!-- LinkedIn -->
+              <li>
+                <!-- Action to redirect to my LinkedIn profile -->
+                <a class="nav-link contactInfo" href="https://www.linkedin.com/in/santiago-felipe-carreno-pardo/"
+                  target="_blank"><i class="fa-brands fa-linkedin"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <br><br>
+              <!-- Phone number -->
+              <li class="nav-item contactInfo">
+                <i class="fas fa-mobile-alt"></i>
+                +1 (437)-661-2248
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="column">
+        <div class="container">
+          <!-- Form redirects to home page once it is submitted -->
+          <form action="/">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="contactnumber">Contact Number</label>
+            <input type="text" id="contactnumber" name="number">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" style="height:200px"></textarea>
+
+            <!-- Submit button that redirects to home page -->
+            <button class="btn btn-secondary" type="submit" value="Submit" style="font-size: x-large;">
+              Submit
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section-->
+  <%- include ('./partials/footer.ejs') %>
