@@ -1,6 +1,10 @@
+/*
+    express.js
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+*/
 const express = require('express');
-const morgan = require('morgan');
-const compress = require('compress');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
