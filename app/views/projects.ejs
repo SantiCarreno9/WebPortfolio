@@ -1,0 +1,123 @@
+<!--
+    projects.ejs
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+-->
+<!-- Header Section-->
+<%- include ('./partials/header.ejs') %>
+    <!-- Imports stylesheet for this page-->
+    <link rel='stylesheet' href='/Content/css/projects.css' />
+    <!-- Main Section-->
+    <main class="container">
+        <!-- Lipoma Surgery Simulator -->
+        <div class="row" style=" background-color: var(--secondary-color);">
+            <div class="column">
+                <!-- YouTube Frame -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jc6QFovmRck?si=5Utht4aecYS4IzpE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Project Description -->
+            <div class="column">
+                <h1>Collaborative Surgery Simulator</h1>
+                <br>
+                <p>
+                    Prototype of a multi-user environment simulator for lipoma extraction surgery,
+                    with some of its features including:
+                <ul>
+                    <li> Online Multiplayer system where each user can choose a specific role (surgeon, assistant,
+                        resident, etc) and chat through a voice chat feature.</li>
+                    <li> Real time 3D mesh modification.</li>
+                    <li> Avatars animations, both hand controls.</li>
+                    <li> Object transfer between users.</li>
+                </ul>
+                <br>
+                This project was featured at an IEEE conference. You can find it
+                <a href="https://ieeexplore.ieee.org/document/9419164" target="_blank" style="color: white;"> here.</a>
+                </p>
+
+            </div>
+        </div>
+
+        <!--UNO-->
+        <div class="row" style="background-color: var(--main-color);">
+            <!-- Project Description -->
+            <div class="column">
+                <h1>UNO 3D</h1>
+                <br>
+                <p>
+                    Videogame of the popular card game UNO, but in a 3D immersive version:
+                </p>
+                <ul>
+                    <li> Multiplayer system (up to 6 players).</li>
+                    <li> Animations for special cards.</li>
+                    <li> Complete game logic implemented.</li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- YouTube Frame -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HDGS-Jimu5M?si=d0NNyWFNcOJw1_4a"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!--Cookie-->
+        <div class="row" style="background-color: var(--secondary-color);">
+            <div class="column">
+                <!-- YouTube Frame -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zUrW9RkVLnM?si=i2NP5k0hVhGbtMtc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Project Description -->
+            <div class="column">
+                <h1>Cookies Game</h1>
+                <br>
+                <p>
+                    Single player game, where the user has to collect as many cookies as possible in a short time while
+                    avoiding obstacles:
+                </p>
+                <ul>
+                    <li> Procedural map generation.</li>
+                    <li> Last highest score saved locally</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Jumping Game-->
+        <div class="row" style="background-color: var(--main-color);">
+            <!-- Project Description -->
+            <div class="column">
+                <h1>Jumping Game</h1>
+                <br>
+                <p>
+                    Based on Google's Dinosaur Game where the player has to dodge obstacles and last as long as
+                    possible:
+                </p>
+                <ul>
+                    <li> Control by voice commands (english or spanish) or keyboard.</li>
+                    <li> Difficulty increases over time.</li>
+                    <li> Multiplatform (Desktop & Web Browser)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- YouTube Frame -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RJGvawRlqMs?si=wHTpjVGHRpgj4fxc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section-->
+    <%- include ('./partials/footer.ejs') %>

@@ -1,0 +1,58 @@
+<!--
+    home.ejs
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+-->
+<!-- Header Section-->
+<%- include ('./partials/header.ejs') %>
+  <!-- Imports stylesheet for this page-->
+  <link rel='stylesheet' href='/Content/css/home.css' />
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Title -->
+    <h1 class="display-4">Welcome to my portfolio!</h1>
+    <br>
+    <div>
+      <h2 style="font-size: 45px; justify-content: center;">
+        I'm Santiago Carreño,<br> a Unity Developer</h2>
+    </div>
+    <!-- Main Content -->
+    <main class="container" style="font-size: large;">
+      <div class="row">
+        <!-- Unity Development Image -->
+        <div class="column" style="height: 100%;">
+          <img src="/Assets/Images/UnityDevelopment.jpg" width="550" style="border-radius: 5px;">
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="column">
+          <h3>Bringing digital ideas to life with Unity is my mission. I love creating cool and interactive experiences
+            that
+            make technology fun for everyone. I'm all about pushing the limits and making things that wow people. My
+            goal is
+            to build stuff that's not just good but amazing, making Unity development something everyone can enjoy and
+            be
+            amazed by.</h3>
+          <br>
+          <div class="buttonsContainer">
+            <!-- Button to redirect to About page-->
+            <a href="/about">
+              <button type="button" class="btn btn-secondary" style="font-size: x-large;">
+                Learn more
+              </button>
+            </a>
+            <!-- Button to redirect to Projects page-->
+            <a href="/projects">
+              <button type="button" class="btn btn-secondary projectsButton">
+                Portfolio
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section-->
+    <%- include ('./partials/footer.ejs') %>

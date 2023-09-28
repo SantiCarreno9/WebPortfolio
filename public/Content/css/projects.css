@@ -1,0 +1,30 @@
+/*Styles for h1*/
+h1 {
+  font-weight: bold;
+}
+
+/*Styles to adjust main container layout*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Styles to adjust each project container layout*/
+.row {
+  color: white;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+/*Styles to adjust each column for the projects 
+video and description*/
+.column {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  justify-content: left;
+  align-items: start;
+}

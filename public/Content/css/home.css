@@ -1,0 +1,30 @@
+/*
+    home.css
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+*/
+
+/*Styles to adjust layout of content*/
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+    padding-top: 20px;
+}
+
+/*Styles for container to adjust the buttons position*/
+.buttonsContainer{    
+    display: flex;  
+    justify-content:end;  
+    width: 100%;
+  }
+
+/*Styles for projects button*/
+.projectsButton{    
+    color: black;
+    background-color: var(--background-color);
+    font-size: x-large;
+    margin-left: 30px;
+}

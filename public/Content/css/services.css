@@ -1,0 +1,53 @@
+/*
+    service.css
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+*/
+
+/*Styles for main content container*/
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*Styles for container box for service info*/
+.serviceBox {  
+  width: 500px;
+  height: 500px;
+  border-style: solid;  
+  border-color: black;
+  border-width: 2px;  
+  border-radius: 30px;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  display:flex;
+}
+
+/*Styles for service images*/
+.serviceImage img {
+  width: 300px;  
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/*Styles for service description*/
+.serviceInfo{
+  width: 100%;
+  text-align: center;   
+}
+
+/*Styles for paragraph font size*/
+p{
+  font-size: 15px;
+}
+
+
+
