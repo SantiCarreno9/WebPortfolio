@@ -1,0 +1,86 @@
+<!--
+    header.ejs
+    Santiago Felipe Carreño Pardo
+    301283698
+    09/28/2023
+-->
+<!-- Header Section-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel='stylesheet' href='/Content/css/app.css' />
+
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <!-- Upper dark bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+      <!-- Logo -->
+      <img src="/Assets/Images/Logo.png" width="65" height="65" alt="" style="margin:-10px 5px">
+    </a>
+
+    <!-- Navigation Bar Buttons -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <!-- The following if statements are used in order to change
+          the navigation button styles depending on the current page title-->
+
+        <!-- Home -->
+        <% if (title=="Home" ){ %>
+          <li class="nav-item active">
+            <% } else { %>
+          <li class="nav-item">
+            <% } %>
+              <a class="nav-link" href="/"> Home </a>
+          </li>
+
+          <!-- Projects -->
+          <% if (title=="Projects" ) { %>
+            <li class="nav-item active">
+              <% } else { %>
+            <li class="nav-item" style="color: red;">
+              <% } %>
+                <a class="nav-link" href="/projects"> Projects </a>
+            </li>
+
+            <!-- Services -->
+            <% if (title=="Services" ) { %>
+              <li class="nav-item active">
+                <% } else { %>
+              <li class="nav-item">
+                <% } %>
+                  <a class="nav-link" href="/services"> Services </a>
+              </li>
+
+              <!-- About -->
+              <% if (title=="About" ) { %>
+                <li class="nav-item active">
+                  <% } else { %>
+                <li class="nav-item">
+                  <% } %>
+                    <a class="nav-link" href="/about"> About </a>
+                </li>
+
+                <!-- Contact -->
+                <% if (title=="Contact" ) { %>
+                  <li class="nav-item active">
+                    <% } else { %>
+                  <li class="nav-item">
+                    <% } %>
+                      <a class="nav-link" href="/contact"> Contact </a>
+                  </li>
+      </ul>
+    </div>
+  </nav>
