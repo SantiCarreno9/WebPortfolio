@@ -6,12 +6,6 @@ const methodOverride = require('method-override');
 
 const appFunction = () => {
     const app = express();
-    if (process.env.NODE_ENV === 'development') {
-        app.use(morgan('dev'));
-    }
-    else if (process.env.NODE_ENV === 'production') {
-        app.use(compress());
-    }
 
     //Used mainly for post request
     app.use(bodyParser.urlencoded({
